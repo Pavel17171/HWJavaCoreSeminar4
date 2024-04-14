@@ -19,10 +19,10 @@ public class Main {
 
 
 
-        // Создание магазина
+        // Выбор праздника
         Holiday.day toDay;
         System.out.println("""
-                           Выберите правздник:
+                           Выберите праздник:
                            1 - Новый год
                            2 - 23 февраля
                            3 - 8 марта
@@ -46,6 +46,8 @@ public class Main {
                 toDay = JUST_DAY;
             }
         }
+
+        // Создание магазина
         Store store = new Store(toDay);
 
         System.out.println("\n" + "*".repeat(20));
